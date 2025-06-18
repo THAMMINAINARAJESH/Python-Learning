@@ -11,8 +11,7 @@ n = int(input("enter no of rows: "))
 #             value = value + 1
 #         print()
 # print_pyramid(n)
-max_val = (n * (2 * n - 1)) // 2  # Rough estimate of max number
-width = len(str(max_val)) + 1     # Width for alignment
+width = len(str(n * (2 * n - 1) // 2)) + 1 
 def print_pyramid(n):
     value = 1
     for i in range(1, n + 1):
